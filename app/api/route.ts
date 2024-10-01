@@ -10,21 +10,19 @@ export const POST = async (req: NextRequest) => {
         if (!name || !email || !message) {
             throw Error ('Todos los campos son obligatorios')
           }
-        
+          console.log(PASSWORD)
           const transporter = nodemailer.createTransport({
-            host: 'smtp-mail.outlook.com',
-            port: 587,
-            secure: false,
+            service: 'gmail',
             auth: {
-              user: 'juanjosediazarmada@outlook.com',
+              user: 'urielcampos448@gmail.com',
               pass: PASSWORD,
             },
           });
           
 
-          const info = await transporter.sendMail({
-            from: `"${name}" <juanjosediazarmada@outlook.com>`, 
-            to: 'juanjosediazarmada@outlook.com', 
+          await transporter.sendMail({
+            from: `${name} <${email}>`, 
+            to: 'urielcampos448@gmail.com', 
             subject: "Portfolio Contact Form", 
             text: message + '\n\n' + email, 
           });

@@ -34,8 +34,7 @@ const Navbar = () => {
     return(
         <NavbarNext maxWidth="full"  className="border-b-2 border-blue-500 border-opacity-20 rounded-sm bg- ">
             <NavbarBrand className="hidden md:flex">
-                <Image src="/logo.png" width={100} height={50} alt="logo" />
-                <p className="font-bold text-inherit hidden md:block font-mono">Juan José Diaz</p>
+                <p className="font-bold text-inherit hidden md:block font-mono">Uriel Campos</p>
             </NavbarBrand>
             <NavbarContent className="flex gap-6 text-lg" justify="center">
             <NavbarItem>

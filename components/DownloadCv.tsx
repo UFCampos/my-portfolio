@@ -7,7 +7,9 @@ const DownloadCv = () => {
         <div className="flex justify-center p-4" >
             <div className="flex flex-col bg-gray-800 bg-opacity-50 rounded-3xl p-4 gap-6">
                 <Link target="_blank" href="/Resume.pdf" >
-                    <Image className=" hover:scale-110 cursor-pointer" src="/panda.png" alt="download" width={400} height={800}></Image>
+                    <button className="bg-violet-500 hover:bg-violet-600 text-white font-bold py-2 px-4 rounded-full">
+                        My resume
+                    </button>
                 </Link>
             </div>
         </div>

@@ -49,6 +49,18 @@ const Skills = () => {
         {
             name: "Tailwind",
             image: "/tailwind.svg"
+        },
+        {
+            name: "MongoDB",
+            image: "/mongodb.svg"
+        },
+        {
+            name: "Python",
+            image: "/python.svg"
+        },
+        {
+            name: "Sequelize",
+            image: "/sequelize.svg"
         }
     ]
     
