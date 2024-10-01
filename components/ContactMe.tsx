@@ -56,12 +56,12 @@ const ContactMe = () => {
         items-center text-center" 
         onSubmit={handleSubmit}
         >
-            <div className="sm:w-1/3 h-2/3 flex justify-center flex-col bg-gray-800 bg-opacity-50 rounded-3xl p-5 gap-4">
+            <div className="sm:w-1/3 h-2/3 flex justify-center flex-col border bg-card rounded-3xl p-5 gap-4">
                 <h1 className="text-3xl font-mono">Contact me</h1>
                     <div className="flex flex-col justify-center items-center gap-4 p-5 m-5 h-full">
 
-                        <Input label="Your name" value={form.name} size={'md'} className=" bg-gray-700 rounded-lg" onChange={(e) => setForm({...form, name: e.target.value})}></Input>
-                        <Input label="Email" size={'md'} value={form.email} isInvalid={isInvalid} color={isInvalid ? 'danger' : form.email === '' ? 'default' : 'success'} errorMessage={isInvalid && 'Please enter a valid email'}  className=" bg-gray-700 rounded-lg" onChange={(e) => setForm({...form, email: e.target.value})}></Input>
+                        <Input label="Your name" value={form.name} size={'md'} className="rounded-lg" onChange={(e) => setForm({...form, name: e.target.value})}></Input>
+                        <Input label="Email" size={'md'} value={form.email} isInvalid={isInvalid} color={isInvalid ? 'danger' : form.email === '' ? 'default' : 'success'} errorMessage={isInvalid && 'Please enter a valid email'}  className=" rounded-lg" onChange={(e) => setForm({...form, email: e.target.value})}></Input>
 
                         <Textarea
                             isRequired
